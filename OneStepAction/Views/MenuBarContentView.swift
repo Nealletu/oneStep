@@ -12,15 +12,14 @@ struct MenuBarContentView: View {
 
         Divider()
 
-        Button {
-            model.accessibility.openSystemSettings()
-        } label: {
-            if model.accessibility.isTrusted {
-                Text(String(localized: "menu.accessibilityStatus.on"))
-            } else {
-                Text(String(localized: "menu.accessibilityStatus.off"))
+        // Same left-column checkmark layout as Launch at Login.
+        // Click opens System Settings; the toggle never flips on its own.
+        Toggle(String(localized: "menu.accessibility"), isOn: Binding(
+            get: { model.accessibility.isTrusted },
+            set: { _ in
+                model.accessibility.openSystemSettings()
             }
-        }
+        ))
 
         Toggle(String(localized: "menu.loginItem"), isOn: Binding(
             get: { model.loginItem.isEnabled },

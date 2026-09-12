@@ -22,6 +22,7 @@ struct OneStepApp: App {
                 .onAppear {
                     // Settings window open → appear in Dock and ⌘Tab.
                     appDelegate.enterRegularMode()
+                    // bootstrap already ran at launch; refresh permission UI only.
                     model.bootstrap()
                 }
         }

@@ -9,6 +9,8 @@ final class AccessibilityManager {
     private(set) var isTrusted: Bool = false
 
     private var pollTimer: Timer?
+    private var onTrustChange: (() -> Void)?
+    private var lastObservedTrusted = false
 
     /// Imported C var is not Sendable — use the documented key string instead.
     private static let axTrustedPromptKey = "AXTrustedCheckOptionPrompt"
@@ -37,12 +39,19 @@ final class AccessibilityManager {
         }
     }
 
-    /// Start observing permission changes while the app is active.
-    func startMonitoring() {
+    /// Start observing permission changes. Invokes `onTrustChange` when trust flips to granted.
+    func startMonitoring(onTrustChange: (() -> Void)? = nil) {
         stopMonitoring()
+        self.onTrustChange = onTrustChange
+        lastObservedTrusted = isTrusted
         pollTimer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { [weak self] _ in
             Task { @MainActor [weak self] in
-                self?.refresh()
+                guard let self else { return }
+                self.refresh()
+                if self.isTrusted && !self.lastObservedTrusted {
+                    self.onTrustChange?()
+                }
+                self.lastObservedTrusted = self.isTrusted
             }
         }
     }
@@ -50,5 +59,6 @@ final class AccessibilityManager {
     func stopMonitoring() {
         pollTimer?.invalidate()
         pollTimer = nil
+        onTrustChange = nil
     }
 }

@@ -49,12 +49,10 @@
 "window.shortcuts" = "Shortcuts";
 "menu.empty" = "No shortcuts yet";
 "menu.settings" = "Shortcut Settings…";
-"menu.accessibility" = "Accessibility";
-"menu.accessibilityStatus.on" = "Accessibility  ✓ Authorized";
-"menu.accessibilityStatus.off" = "Accessibility  ⚠ Not Authorized";
+"menu.accessibility" = "Accessibility Permission";
 "menu.loginItem" = "Launch at Login";
-"menu.about" = "About OneStep Action";
-"menu.quit" = "Quit OneStep Action";
+"menu.about" = "About";
+"menu.quit" = "Quit";
 
 "empty.title" = "No Shortcuts";
 "empty.description" = "Add a global shortcut to lock the screen, open an app, open a URL, or run a shell command.";

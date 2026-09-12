@@ -49,12 +49,10 @@
 "window.shortcuts" = "快捷键";
 "menu.empty" = "还没有快捷键";
 "menu.settings" = "快捷键设置…";
-"menu.accessibility" = "辅助功能";
-"menu.accessibilityStatus.on" = "辅助功能权限     ✓ 已授权";
-"menu.accessibilityStatus.off" = "辅助功能权限     ⚠ 未授权";
+"menu.accessibility" = "辅助功能授权";
 "menu.loginItem" = "开机启动";
-"menu.about" = "关于 OneStep Action";
-"menu.quit" = "退出 OneStep Action";
+"menu.about" = "关于";
+"menu.quit" = "退出";
 
 "empty.title" = "还没有快捷键";
 "empty.description" = "添加全局快捷键，用于锁定屏幕、打开 App、打开 URL 或执行 Shell 命令。";

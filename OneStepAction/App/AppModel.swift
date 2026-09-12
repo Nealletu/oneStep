@@ -18,6 +18,10 @@ final class AppModel {
         shortcutManager = GlobalShortcutManager { [weak self] binding in
             self?.noteTriggered(binding)
         }
+        // Start event tap at launch — not only after the settings window opens.
+        Task { @MainActor [weak self] in
+            self?.bootstrap()
+        }
     }
 
     func bootstrap() {
@@ -25,7 +29,10 @@ final class AppModel {
         if !accessibility.isTrusted {
             showPermissionSheet = true
         }
-        accessibility.startMonitoring()
+        accessibility.startMonitoring { [weak self] in
+            // Permission granted later (System Settings) → register hotkeys.
+            self?.syncShortcuts()
+        }
         syncShortcuts()
     }
 

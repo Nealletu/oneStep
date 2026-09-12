@@ -2,7 +2,7 @@ import AppKit
 import Foundation
 
 enum AboutPresenter {
-    static let githubURL = URL(string: "https://github.com/Nealletu/oneStep-Action")!
+    static let githubURL = URL(string: "https://github.com/Nealletu/OneStep-Action")!
 
     @MainActor
     static func show() {
