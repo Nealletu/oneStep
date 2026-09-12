@@ -1,0 +1,30 @@
+# Xcode / build
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# App bundle / release packaging (not source)
+OneStep.app/
+OneStep Action.app/
+*.dmg
+*.zip
+*.tar.gz
+*.pkg
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# Secrets / local
+*.pem
+.env
+.env.*

@@ -1,0 +1,38 @@
+name: OneStepAction
+options:
+  bundleIdPrefix: com.onestep
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    ARCHS: arm64
+    ONLY_ACTIVE_ARCH: YES
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+    DEAD_CODE_STRIPPING: YES
+targets:
+  OneStepAction:
+    type: application
+    platform: macOS
+    sources:
+      - path: OneStepAction
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.onestep.app
+        PRODUCT_NAME: OneStep Action
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Support/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Support/OneStepAction.entitlements
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+        SWIFT_EMIT_LOC_STRINGS: YES

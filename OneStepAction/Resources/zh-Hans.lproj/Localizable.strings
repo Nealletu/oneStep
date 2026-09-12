@@ -1,0 +1,89 @@
+/* Simplified Chinese */
+"action.lockScreen" = "锁定屏幕";
+"action.launchApp" = "打开 %@";
+"action.openURL" = "打开 %@";
+"action.shell" = "Shell：%@";
+"type.system" = "系统操作";
+"type.app" = "应用";
+"type.url" = "URL";
+"type.shell" = "Shell 命令";
+
+"conflict.unknown" = "无法确认是否被其他程序占用";
+"conflict.clear" = "当前未发现已知冲突";
+"conflict.internal" = "快捷键已被其他操作使用";
+"conflict.potential" = "可能与当前 App 或其他程序冲突";
+"conflict.menu" = "可能与菜单项“%@”冲突";
+
+"system.lockScreen" = "与 macOS 锁定屏幕快捷键冲突（⌃⌘Q）";
+"system.forceQuit" = "与强制退出冲突（⌥⌘⎋）";
+"system.spotlight" = "与 Spotlight 冲突";
+"system.screenshot" = "与截屏快捷键冲突";
+"system.switchApp" = "与切换应用程序冲突";
+"system.switchAppBack" = "与切换应用程序（反向）冲突";
+"system.missionControl" = "与调度中心冲突";
+"system.appExpose" = "与 App Exposé 冲突";
+"system.emoji" = "与表情与符号冲突";
+"system.showDesktop" = "与显示桌面冲突";
+"system.help" = "与 macOS 帮助冲突";
+"system.logout" = "与立即注销冲突";
+"system.dictation" = "与听写冲突";
+
+"error.invalidURL" = "无效的 URL：%@";
+"error.appNotFound" = "无法打开应用：%@";
+"error.lockScreen" = "锁定屏幕失败：%@";
+"error.lockScreen.missing" = "未在此 Mac 上找到系统锁定屏幕组件。";
+"error.shell" = "Shell 命令失败（退出码 %d）";
+"error.shellDetail" = "Shell 命令失败（退出码 %d）：\n%@";
+"error.eventTap.create" = "无法创建全局事件监听。请检查辅助功能权限。";
+
+"alert.actionFailed.title" = "操作执行失败";
+"alert.error" = "错误";
+"common.ok" = "好";
+"common.cancel" = "取消";
+"common.save" = "保存";
+"common.edit" = "编辑";
+"common.delete" = "删除";
+"common.add" = "添加";
+"common.browse" = "浏览…";
+
+"window.shortcuts" = "快捷键";
+"menu.empty" = "还没有快捷键";
+"menu.settings" = "快捷键设置…";
+"menu.accessibility" = "辅助功能";
+"menu.accessibilityStatus.on" = "辅助功能权限     ✓ 已授权";
+"menu.accessibilityStatus.off" = "辅助功能权限     ⚠ 未授权";
+"menu.loginItem" = "开机启动";
+"menu.about" = "关于 OneStep Action";
+"menu.quit" = "退出 OneStep Action";
+
+"empty.title" = "还没有快捷键";
+"empty.description" = "添加全局快捷键，用于锁定屏幕、打开 App、打开 URL 或执行 Shell 命令。";
+"help.addShortcut" = "添加快捷键";
+
+"add.title" = "添加快捷键";
+"edit.title" = "编辑快捷键";
+"field.action" = "动作";
+"field.shortcut" = "快捷键";
+"field.enabled" = "启用";
+"field.customName" = "名称（可选）";
+"field.appPath" = "应用路径";
+"field.appName" = "应用名称";
+"field.bundleID" = "Bundle ID";
+"field.url" = "URL";
+"hint.lockScreen" = "使用系统登录会话锁屏接口（非模拟 ⌃⌘Q）。";
+"hint.shell" = "以登录 Shell 执行。命令仅保存在本地，按下快捷键时才会运行。";
+
+"recorder.listening" = "请按下快捷键…（Esc 取消）";
+"recorder.placeholder" = "点击后按下快捷键";
+"recorder.a11y" = "快捷键录入";
+
+"confirm.deleteTitle" = "删除快捷键？";
+"confirm.deleteMessage" = "将同时解除该快捷键的全局注册。";
+
+"permission.title" = "需要辅助功能权限";
+"permission.message" = "为了监听全局快捷键，请允许 OneStep Action 访问“辅助功能”。";
+"permission.openSettings" = "打开系统设置";
+"permission.later" = "稍后";
+
+"about.blurb" = "全局快捷键：锁屏、打开 App / URL、执行 Shell。";
+"about.github" = "在 GitHub 上查看";

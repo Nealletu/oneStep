@@ -1,0 +1,89 @@
+/* English */
+"action.lockScreen" = "Lock Screen";
+"action.launchApp" = "Open %@";
+"action.openURL" = "Open %@";
+"action.shell" = "Shell: %@";
+"type.system" = "System";
+"type.app" = "Application";
+"type.url" = "URL";
+"type.shell" = "Shell Command";
+
+"conflict.unknown" = "Cannot confirm whether this shortcut is used by other apps";
+"conflict.clear" = "No known conflict found";
+"conflict.internal" = "This shortcut is already used by another action";
+"conflict.potential" = "May conflict with the current app or other programs";
+"conflict.menu" = "May conflict with menu item “%@”";
+
+"system.lockScreen" = "Conflicts with macOS Lock Screen (⌃⌘Q)";
+"system.forceQuit" = "Conflicts with Force Quit (⌥⌘⎋)";
+"system.spotlight" = "Conflicts with Spotlight";
+"system.screenshot" = "Conflicts with Screenshot";
+"system.switchApp" = "Conflicts with Switch Applications";
+"system.switchAppBack" = "Conflicts with Switch Applications (reverse)";
+"system.missionControl" = "Conflicts with Mission Control";
+"system.appExpose" = "Conflicts with App Exposé";
+"system.emoji" = "Conflicts with Emoji & Symbols";
+"system.showDesktop" = "Conflicts with Show Desktop";
+"system.help" = "Conflicts with macOS Help";
+"system.logout" = "Conflicts with Log Out Immediately";
+"system.dictation" = "Conflicts with Dictation";
+
+"error.invalidURL" = "Invalid URL: %@";
+"error.appNotFound" = "Could not open application: %@";
+"error.lockScreen" = "Lock Screen failed: %@";
+"error.lockScreen.missing" = "System Lock Screen helper was not found on this Mac.";
+"error.shell" = "Shell command failed (exit %d)";
+"error.shellDetail" = "Shell command failed (exit %d):\n%@";
+"error.eventTap.create" = "Failed to create global event tap. Check Accessibility permission.";
+
+"alert.actionFailed.title" = "Action Failed";
+"alert.error" = "Error";
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.save" = "Save";
+"common.edit" = "Edit";
+"common.delete" = "Delete";
+"common.add" = "Add";
+"common.browse" = "Browse…";
+
+"window.shortcuts" = "Shortcuts";
+"menu.empty" = "No shortcuts yet";
+"menu.settings" = "Shortcut Settings…";
+"menu.accessibility" = "Accessibility";
+"menu.accessibilityStatus.on" = "Accessibility  ✓ Authorized";
+"menu.accessibilityStatus.off" = "Accessibility  ⚠ Not Authorized";
+"menu.loginItem" = "Launch at Login";
+"menu.about" = "About OneStep Action";
+"menu.quit" = "Quit OneStep Action";
+
+"empty.title" = "No Shortcuts";
+"empty.description" = "Add a global shortcut to lock the screen, open an app, open a URL, or run a shell command.";
+"help.addShortcut" = "Add Shortcut";
+
+"add.title" = "Add Shortcut";
+"edit.title" = "Edit Shortcut";
+"field.action" = "Action";
+"field.shortcut" = "Shortcut";
+"field.enabled" = "Enabled";
+"field.customName" = "Name (optional)";
+"field.appPath" = "Application path";
+"field.appName" = "App name";
+"field.bundleID" = "Bundle ID";
+"field.url" = "URL";
+"hint.lockScreen" = "Uses the system login-session lock API (not simulated ⌃⌘Q).";
+"hint.shell" = "Runs with your login shell. The command is stored locally and only runs when you press the shortcut.";
+
+"recorder.listening" = "Press a shortcut…  (Esc to cancel)";
+"recorder.placeholder" = "Click, then press a shortcut";
+"recorder.a11y" = "Shortcut recorder";
+
+"confirm.deleteTitle" = "Delete Shortcut?";
+"confirm.deleteMessage" = "This will unregister the global shortcut.";
+
+"permission.title" = "Accessibility Permission Required";
+"permission.message" = "OneStep Action needs Accessibility access to listen for global shortcuts.";
+"permission.openSettings" = "Open System Settings";
+"permission.later" = "Later";
+
+"about.blurb" = "Global hotkeys for lock screen, apps, URLs, and shell commands.";
+"about.github" = "View on GitHub";
